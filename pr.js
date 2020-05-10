@@ -100,7 +100,8 @@ function buildPaymentRequest() {
         request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
-            handleError(err);          //handle error
+            handleError(err);  
+         alert("Inside Can Make Payment "+err); //handle error
             request = buildPaymentRequest();
           });
       } catch (e) {
