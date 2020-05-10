@@ -97,7 +97,7 @@ function buildPaymentRequest() {
     }
  
       try {
-        PaymentRequest.show()
+        request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
             handleError(err);  
