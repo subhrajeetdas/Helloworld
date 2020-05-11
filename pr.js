@@ -9,6 +9,10 @@ function buildPaymentRequest() {
     if (!window.PaymentRequest) {
       return null;
     }
+ 
+function handleError(err){
+ console.log("Catch at handle error", err);
+}
     
     const supportedInstruments = [{
         supportedMethods: "https://mercury-uat.phonepe.com/transact/pay",
@@ -99,9 +103,9 @@ function buildPaymentRequest() {
         request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
-            console.log("Inside catch :"+err)
-            //handleError(err);  
-            alert("Inside handleError "+err); //handle error
+            //console.log("Inside catch :"+err)
+            handleError(err);  
+            //alert("Inside handleError "+err); //handle error
             request = buildPaymentRequest();
           });
       } catch (e) {
