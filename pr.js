@@ -100,7 +100,7 @@ function buildPaymentRequest() {
           .then(handlePaymentResponse)
           .catch(function(err) {
             console.log("Inside catch :"+err)
-            handleError(err);  
+            //handleError(err);  
             alert("Inside handleError "+err); //handle error
             request = buildPaymentRequest();
           });
