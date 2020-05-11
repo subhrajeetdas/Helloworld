@@ -10,9 +10,7 @@ function buildPaymentRequest() {
       return null;
     }
  
-function handleError(err){
- console.log("Catch at handle error", err);
-}
+
     
     const supportedInstruments = [{
         supportedMethods: "https://mercury-uat.phonepe.com/transact/pay",
