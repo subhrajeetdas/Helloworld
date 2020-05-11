@@ -95,13 +95,13 @@ function buildPaymentRequest() {
     if (!window.PaymentRequest || !request) {
       return;
     }
- 
       try {
         request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
+            console.log("Inside catch :"+err)
             handleError(err);  
-         alert("Inside Can Make Payment "+err); //handle error
+            alert("Inside handleError "+err); //handle error
             request = buildPaymentRequest();
           });
       } catch (e) {
