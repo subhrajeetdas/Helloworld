@@ -9,7 +9,9 @@ function buildPaymentRequest() {
     if (!window.PaymentRequest) {
       return null;
     }
- 
+ function handleError(err){
+ console.log("Catch at handle error", err);
+    }
 
     
     const supportedInstruments = [{
