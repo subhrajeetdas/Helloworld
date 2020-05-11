@@ -41,11 +41,12 @@ function buildPaymentRequest() {
             //Show “pay by Phonepe” button in payment options
             //onPayByPhonePeClick();
             //console.log("Inside Can Make Payment"+result);
-            alert("Hello");
             alert("Inside Can Make Payment "+result);
 
         }).catch(function(err) {
-          handleError(err);
+          //handleError(err);
+            alert("Error Handling"+ err);
+            console.log("Error Handling",err);
         });
       }
       if (request.hasEnrolledInstrument) {
@@ -55,7 +56,9 @@ function buildPaymentRequest() {
         });
       }
     } catch (e) {
-      handleError(e);
+      //handleError(e);
+     alert("Error Handling"+ e);
+            console.log("Error Handling",e);
     }
   }
   
@@ -103,12 +106,14 @@ function buildPaymentRequest() {
         request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
-            //console.log("Inside catch :"+err)
-            handleError(err);  
-            //alert("Inside handleError "+err); //handle error
+            console.log("Inside catch :", err)
+            //handleError(err);  
+            alert("Inside handleError "+err); //handle error
             request = buildPaymentRequest();
           });
       } catch (e) {
-        handleError(e);
+        //handleError(e);
+        console.log("Inside catch :", e)
+        alert("Inside handleError- "+e);
       }
   }
