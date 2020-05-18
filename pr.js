@@ -17,7 +17,7 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://mercury-uat.phonepe.com/transact/pay",
         data: {
-            url: 'upi://pay?pa=M2306160483220675579140@ybl&pn=HP-TEST&am=7.00&mam=7.00&tr=ABe11177ewf2fs&tn=Payment+for+quikr_001&mc=5311&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=M2306160483220675579140&utm_source=ABe11177ewf2fs'  //redirect url from v4/debit response
+            url: 'upi://pay?pa=M2306160483220675579140@ybl&pn=HP-TEST&am=7.00&mam=7.00&tr=ABe111771ewf2fs&tn=Payment+for+quikr_001&mc=5311&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=M2306160483220675579140&utm_source=ABe111771ewf2fs'  //redirect url from v4/debit response
         }
     }];
   
@@ -69,7 +69,18 @@ function buildPaymentRequest() {
        buildPaymentRequest();
   }
  
-  
+  function handlePaymentResponse(response) {
+
+ response
+   .complete("success")
+   .then(function() {
+     console.log("This is a demo website. No payment will be processed." + response);
+   })
+   .catch(function(err) {
+     error(err);
+     request = buildPaymentRequest();
+   });
+}
   /**
    * Handles the response from PaymentRequest.show().
    */
