@@ -83,7 +83,7 @@ function buildPaymentRequest() {
 }
   /**
    * Handles the response from PaymentRequest.show().
-   */
+   
   function handlePaymentResponse(response) {
       //Check if the response.details.result is success
       //get the transaction ref id from the response
@@ -104,7 +104,7 @@ function buildPaymentRequest() {
             response.complete("fail");          //notifies the user agent that the user interaction is over, and causes any remaining user interface to be closed
           });      
   }
-  
+  */
   /**
    * Click event listener for “pay by Phonepe” button
    * Launch payment request for Phonepe payment.
