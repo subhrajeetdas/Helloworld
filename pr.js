@@ -17,7 +17,7 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://mercury-uat.phonepe.com/transact/pay",
         data: {
-            url: 'upi://pay?pa=M2306160483220675579140@ybl&pn=M2306160483220675579140&am=1.00&mam=1.00&tr=A3wd3lwrl3r2fs&tn=Payment+for+quikr_001&mc=5311&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=M2306160483220675579140&utm_source=A3wd3lwrl3r2fs'  //redirect url from v4/debit response
+            url: 'upi://pay?pa=M2306160483220675579140@ybl&pn=M2306160483220675579140&am=1.00&mam=1.00&tr=A3wdi3lwrl3r2fs&tn=Payment+for+quikr_001&mc=5311&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=M2306160483220675579140&utm_source=A3wdi3lwrl3r2fs'  //redirect url from v4/debit response
         }
     }];
   
