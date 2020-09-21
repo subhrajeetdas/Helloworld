@@ -24,7 +24,7 @@ function buildPaymentRequest() {
     const details = {
         id: "1111-71ca4e9f-748c-4de7-af7b-a84f3da75b4e-temp",       //A unique id [optional], if not passed browser will generate one
       total: {
-        label: 'Total',
+        label: '_',
         amount: {
           currency: 'INR',
           value: '100',
