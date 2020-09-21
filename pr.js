@@ -17,7 +17,7 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://mercury.phonepe.com/transact/pay",
         data: {
-            url: 'upi://pay?pa=SSK1480603880@ybl&pn=Tic-Tac-Toeaaa&am=1.00&mam=1.00&tr=A3eweee3lwrl3r2fs&tn=Payment+for+quikr_001&mc=5812&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=SSK1480603880&utm_source=A3eweee3lwrl3r2fs'  //redirect url from v4/debit response
+            url: ''  //redirect url from v4/debit response
         }
     }];
   
