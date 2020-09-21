@@ -17,12 +17,7 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://mercury.phonepe.com/transact/pay",
         data: {
-            url: 'upi://pay?pa=bivek@npci&pn=bivek%20rath&mc=9999&tid=cxnkjcnkjdfdvjndkjfvn&tr=48943
-98cndhcd23&tn=Pay%20to%20mystar%20store&am=10&mam=null&cu=INR&url=https://my
-star.com&mode=05&orgid=000000&mid=1234&msid=3432&mtid=1212&sign=
-gynybu6K6ozUrHSySDhBK6rfiRE+VBMLnsxs3d7B/ddeGu43M6sxaY33ZVE4Utc4E1kbCcjgYhfJ
-CUeYLdFp/UKckByYang6C99L337zp4/2mfYyEVg2E+6+G9Y3+RaGYA2iz9cQU43+O0esOuDcc5
-crmQOLoD+X22D21Dl5IKI='  //redirect url from v4/debit response
+            url: 'upi://pay?pa=tatacliq@hdfcbank&pn=bivek%20rath&mc=9999&tid=cxnkjcnkjdfdvjndkjfvn&tr=4894398cndhcd23&tn=Pay%20to%20mystar%20store&am=10&mam=null&cu=INR&url=https://mystar.com&mode=05&orgid=000000&mid=1234&msid=3432&mtid=1212'  //redirect url from v4/debit response
         }
     }];
   
