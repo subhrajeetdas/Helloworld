@@ -17,7 +17,7 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://mercury.phonepe.com/transact/pay",
         data: {
-            url: 'upi://pay?pa=yatra.razorpay@icici&pn=Yatra&tr=EZY2020092412361850957744&tn=YatraJEEMainAdvanced&am=6000&cu=INR&mc=5411'  //redirect url from v4/debit response
+            url: 'upi://pay?pa=M2306160483220675579140@ybl&pn=M2306160483220675579140&am=1.00&mam=1.00&tr=TX1600950915447&tn=Payment%20for%20TX1600950915447&mc=5311&mode=04&purpose=00&utm_campaign=DEBIT&utm_medium=M2306160483220675579140&utm_source=TX1600950915447'  //redirect url from v4/debit response
         }
     }];
   
