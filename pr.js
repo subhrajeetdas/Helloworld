@@ -37,17 +37,18 @@ function buildPaymentRequest() {
       console.log("Request: "+request);
       console.log("request.canMakePayment: "+request.canMakePayment);
       if (request.canMakePayment) {
-        request.canMakePayment().then(function(result) {
+       onPayByPhonePeClick()
+        //request.canMakePayment().then(function(result) {
             //Show “pay by Phonepe” button in payment options
             //onPayByPhonePeClick();
             //console.log("Inside Can Make Payment"+result);
-            alert("Inside Can Make Payment "+result);
+           // alert("Inside Can Make Payment "+result);
 
-        }).catch(function(err) {
+       // }).catch(function(err) {
           //handleError(err);
-            alert("Error Handling"+ err);
-            console.log("Error Handling",err);
-        });
+         //   alert("Error Handling"+ err);
+           // console.log("Error Handling",err);
+        //});
       }
       if (request.hasEnrolledInstrument) {
         request.hasEnrolledInstrument().then(function(result) {
