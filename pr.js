@@ -118,14 +118,15 @@ function buildPaymentRequest() {
         request.show()
           .then(handlePaymentResponse)
           .catch(function(err) {
-            console.log("Inside catch :", err)
+            console.log("Inside catch  :", err)
             handleError(err);  
             alert("Inside handleError "+err); //handle error
             request = buildPaymentRequest();
           });
       } catch (e) {
         handleError(e);
-        console.log("Inside catch :", e)
-        alert("Inside handleError- "+e);
+        console.log("Inside catch1 :", e)
+       
+        alert("Inside handleError- 1 "+e);
       }
   }
