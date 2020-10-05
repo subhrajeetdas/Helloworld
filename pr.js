@@ -17,12 +17,14 @@ function buildPaymentRequest() {
     const supportedInstruments = [{
         supportedMethods: "https://tez.google.com/pay",
         data: {
-         pa: 'merchant-vpa@xxx',
+         pa: 'subhrajeet007@okicici',
         pn: 'Merchant Name',
         tr: '1234ABCD',  // your custom transaction reference ID
         url: 'http://url/of/the/order/in/your/website',
         mc: '1234', // your merchant category code
         tn: 'Purchase in Merchant',
+         am:'10'
+         cu:'INR'
         }
     }];
   
