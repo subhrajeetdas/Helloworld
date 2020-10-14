@@ -15,7 +15,7 @@ function buildPaymentRequest() {
 
     
     const supportedInstruments = [{
-        supportedMethods: "https://tez.google.com/pay",
+        supportedMethods: "https://phonepe.com/transact/pay",
         data: {
          pa: 'subhrajeet007@okicici',
         pn: 'Merchant Name',
